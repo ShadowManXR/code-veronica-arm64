@@ -1,0 +1,27 @@
+diff --git a/KATANA/Include/ninjastr.h b/KATANA/Include/ninjastr.h
+index 2cd1781..de48bfa 100644
+--- a/KATANA/Include/ninjastr.h
++++ b/KATANA/Include/ninjastr.h
+@@ -7,6 +7,10 @@
+ #ifndef _NINJA_STR_H_
+ #define _NINJA_STR_H_
+ 
++#ifdef RECVX_NATIVE_ROOM
++#include <stdint.h>
++#endif
++
+ typedef Sint8 NJS_SYS_ATTR[NJD_SYS_ATTR_SIZE];
+ 
+ typedef void (*NJS_INT_FUNC)(void);
+@@ -158,7 +162,11 @@ typedef struct{
+ typedef struct {
+ 	void            *filename;  /* texture filename strings     */
+ 	Uint32               attr;  /* texture attribute            */
++#ifdef RECVX_NATIVE_ROOM
++	uintptr_t         texaddr;  /* global ID before load, native texture pointer after load */
++#else
+ 	Uint32            texaddr;  /* texture memory list address  */
++#endif
+ } NJS_TEXNAME;
+ 
+ typedef struct {

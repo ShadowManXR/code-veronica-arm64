@@ -1,0 +1,37 @@
+# Local publishing workspace and previous replacement-VR archive
+/.publish/
+/quest-rollback-*/
+**/.git
+/port/.gitmodules
+/port/decomp/.gitmodules
+
+# Generated output, retail game data, local tools and user state
+**/build/
+**/build-*/
+**/__pycache__/
+**/.venv/
+*.pyc
+*.iso
+*.ISO
+*.obb
+*.apk
+*.aab
+*.o
+*.obj
+*.pdb
+*.log
+*.keystore
+*.jks
+.env
+.env.*
+**/local.properties
+**/gamedata/
+**/ISO/
+**/iso/
+**/save/
+**/saves/
+**/scratch/
+/port/decomp/compiler/
+**/PS2 SDK/
+**/.codex/
+**/.agents/

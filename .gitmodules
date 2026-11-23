@@ -1,0 +1,6 @@
+[submodule "katana-headers"]
+	path = port/decomp/include/recvx-decomp-katana
+	url = https://github.com/SkeletonPicture/recvx-decomp-katana
+[submodule "cri-headers"]
+	path = port/decomp/include/recvx-decomp-cri
+	url = https://github.com/SkeletonPicture/recvx-decomp-cri
